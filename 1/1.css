@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  min-width: 300px;
+}
+
+#input-el {
+    width: 100%;
+    height: 3em;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#input-btn, #clear-btn, #tab-btn {
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0.67em;
+    margin-top: 10px;
+    background-color: #5fab61;
+    color: #ffffff;
+    border: none;
+}
+
+#clear-btn {
+    background-color: #ffffff;
+    border: 1px solid #5fab61;
+    color: #5fab61;
+    font-size: 17px;
+}
+
+ul {
+    padding-left: 10px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+li { 
+    margin-top: 0.4em;
+}
+
+ul li a {
+    color: #5fab61;
+}
+
+ul li a:visited {
+    color: blue;
+}
+

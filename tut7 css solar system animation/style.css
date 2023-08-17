@@ -1,0 +1,80 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    overscroll-behavior: none;
+}
+
+.solar-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+:root {
+    --distance: 200px;
+}
+
+.sun {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    box-shadow: 0 0 4rem #ffff;
+    position: absolute;
+}
+
+.earth {
+    width:  calc(var(--distance) + 300px);
+    height: calc(var(--distance) + 300px) ;
+    border-radius: 50%;
+    position: relative;
+    border-top: 1px solid #ffffff6a;
+    animation: earth 10s linear infinite;
+}
+
+.earth::before {
+    content: '';
+    position: absolute;
+    top: 10rem;
+    left: -2.5rem;
+    width: 100px;
+    height: 100px;
+    background-color: #0077be;
+    box-shadow: 0 0 2rem #0077be;
+    border-radius: 50%;
+}
+
+.moon {
+    position: relative;
+    top: 7rem;
+    left: -6rem;
+    height: 200px;
+    width: 200px;
+    border-top: 1px solid #ffffff6a;
+    border-radius: 50%;
+    animation: earth 5s linear infinite;
+}
+
+.moon::before {
+    position: absolute;
+    content: '';
+    top: 2rem;
+    left: -1rem;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    box-shadow: 0 0 2rem #ccc;
+    border-radius: 50%;
+}
+
+@keyframes earth {
+    from {
+        transform: rotate(360deg);
+    }
+}
