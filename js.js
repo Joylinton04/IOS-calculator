@@ -98,3 +98,7 @@ clearEl.addEventListener('click', function(){
     result = ""
     resultEl.textContent = 0
 })
+
+
+
+// javascript
